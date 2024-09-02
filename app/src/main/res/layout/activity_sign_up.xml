@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.authentication.SignInScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="32dp">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="40sp"
+        android:fontFamily="@font/barlow_bold"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your email or username &amp; password to sign up your account."
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/barlow_regular"/>
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="emailAddress"
+        android:padding="8dp"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="12dp"
+        android:hint="Email or username"
+        android:fontFamily="@font/barlow_regular"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="password"
+        android:padding="8dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:fontFamily="@font/barlow_regular"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textVisiblePassword"/>
+    <EditText
+        android:id="@+id/txt_confirm_password"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:autofillHints="password"
+        android:padding="8dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="12dp"
+        android:hint="Confirm Password"
+        android:fontFamily="@font/barlow_regular"
+        android:textSize="15sp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textVisiblePassword"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_up"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="Sign Up"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/barlow_regular"
+        android:textAllCaps="false"/>
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/qa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you already have an account ? "
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/barlow_regular"/>
+        <TextView
+            android:id="@+id/btn_goto_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_toEndOf="@id/qa"
+            android:textSize="15sp"
+            android:textColor="@color/pink"
+            android:textAlignment="center"
+            android:fontFamily="@font/barlow_regular"/>
+    </RelativeLayout>
+</LinearLayout>
